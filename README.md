@@ -38,13 +38,22 @@ O projeto foi organizado conceitualmente em quatro responsabilidades:
 
 ## Resultado observado no estudo de caso
 
-| Indicador | Processo manual | Com automação |
-|---|---:|---:|
-| Tempo médio por execução | 40 minutos | 10 minutos |
-| Tempo economizado | — | 30 minutos |
-| Redução de tempo | — | 75% |
+O tempo médio por execução passou de **40 para 10 minutos**.
 
-<sub>Valores médios descritos no estudo de caso. O tempo pode variar de acordo com a quantidade de relatórios e a necessidade de conferência.</sub>
+```mermaid
+xychart-beta
+    title "Tempo médio por execução"
+    x-axis ["Processo manual", "Com automação"]
+    y-axis "Minutos" 0 --> 40
+    bar [40, 10]
+```
+
+| Ganho por execução | Resultado |
+|---|---:|
+| Tempo economizado | **30 minutos** |
+| Redução do tempo médio | **75%** |
+
+<sub>Comparação baseada nas médias descritas no estudo de caso. O tempo real varia conforme a quantidade de relatórios e as conferências necessárias.</sub>
 
 ## Arquitetura demonstrativa
 
@@ -124,15 +133,23 @@ A automação por interface é útil quando o sistema não oferece uma API ou in
 - Uma execução automatizada precisa de validação dos arquivos gerados.
 - Quando disponível, uma API ou integração nativa tende a ser mais robusta que automação por coordenadas.
 
-## Segurança e privacidade
+## Escopo público e privacidade
 
-- Não inclua credenciais, tokens ou senhas no código.
-- Não publique coordenadas de telas corporativas.
-- Utilize somente dados fictícios ou anonimizados nos exemplos.
-- Revise capturas de tela antes de publicá-las.
-- Não reproduza nomes de relatórios, caminhos internos ou informações confidenciais.
+Este repositório apresenta uma **demonstração técnica independente**. O código operacional utilizado no ambiente corporativo não faz parte da publicação.
 
-Consulte [docs/seguranca-e-limitacoes.md](docs/seguranca-e-limitacoes.md) para mais detalhes.
+O material disponível foi delimitado da seguinte forma:
+
+| Elemento | Escopo publicado |
+|---|---|
+| Código | Exemplo independente de cálculo de dias úteis |
+| Dados | Arquivo de feriados de demonstração |
+| Configurações | Parâmetros fictícios, sem coordenadas reais de interface |
+| Ambiente corporativo | Sem credenciais, tokens, nomes de relatórios, caminhos internos ou dados operacionais |
+| Evidências | Sem capturas proprietárias ou informações identificáveis do ambiente |
+
+Essa separação permite apresentar a lógica e as decisões técnicas do estudo de caso sem expor sistemas, dados ou configurações internas.
+
+Os critérios de publicação e as limitações da automação desktop estão descritos em [docs/seguranca-e-limitacoes.md](docs/seguranca-e-limitacoes.md).
 
 ## Autoria
 
