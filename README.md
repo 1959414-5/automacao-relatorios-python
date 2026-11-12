@@ -40,13 +40,9 @@ O projeto foi organizado conceitualmente em quatro responsabilidades:
 
 O tempo médio por execução passou de **40 para 10 minutos**.
 
-```mermaid
-xychart-beta
-    title "Tempo médio por execução"
-    x-axis ["Processo manual", "Com automação"]
-    y-axis "Minutos" 0 --> 40
-    bar [40, 10]
-```
+<p align="center">
+  <img src="docs/tempo-comparativo.svg" alt="Gráfico comparando 40 minutos no processo manual com 10 minutos com automação. Redução de 75% e economia de 30 minutos por execução." width="900" />
+</p>
 
 | Ganho por execução | Resultado |
 |---|---:|
