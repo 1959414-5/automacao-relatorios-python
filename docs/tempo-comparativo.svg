@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="430" viewBox="0 0 900 430" role="img" aria-labelledby="title desc">
+  <title id="title">Comparação do tempo médio por execução</title>
+  <desc id="desc">O processo manual leva 40 minutos e a execução com automação leva 10 minutos, uma economia de 30 minutos ou redução de 75 por cento.</desc>
+  <defs>
+    <linearGradient id="manual" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#b83c80"/>
+      <stop offset="100%" stop-color="#70264f"/>
+    </linearGradient>
+    <linearGradient id="automated" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ff83c3"/>
+      <stop offset="100%" stop-color="#f15aa7"/>
+    </linearGradient>
+    <filter id="glow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="9" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect x="1" y="1" width="898" height="428" rx="22" fill="#150f18" stroke="#493348" stroke-width="2"/>
+  <circle cx="812" cy="76" r="105" fill="#f15aa7" opacity=".07"/>
+  <text x="48" y="58" fill="#fbf4fa" font-family="Inter,Arial,sans-serif" font-size="25" font-weight="700">Tempo médio por execução</text>
+  <text x="48" y="88" fill="#bbaebb" font-family="Inter,Arial,sans-serif" font-size="15">Comparação antes e depois da automação</text>
+  <rect x="700" y="37" width="150" height="42" rx="21" fill="#35263d" stroke="#8c3c70"/>
+  <text x="775" y="64" text-anchor="middle" fill="#ff83c3" font-family="Inter,Arial,sans-serif" font-size="16" font-weight="800">−75% NO TEMPO</text>
+  <g stroke="#49384d" stroke-width="1">
+    <line x1="145" y1="130" x2="810" y2="130"/>
+    <line x1="145" y1="177.5" x2="810" y2="177.5"/>
+    <line x1="145" y1="225" x2="810" y2="225"/>
+    <line x1="145" y1="272.5" x2="810" y2="272.5"/>
+    <line x1="145" y1="320" x2="810" y2="320"/>
+  </g>
+  <g fill="#bbaebb" font-family="Inter,Arial,sans-serif" font-size="14" text-anchor="end">
+    <text x="125" y="135">40</text><text x="125" y="182.5">30</text><text x="125" y="230">20</text><text x="125" y="277.5">10</text><text x="125" y="325">0</text>
+  </g>
+  <text x="53" y="230" transform="rotate(-90 53 230)" fill="#bbaebb" font-family="Inter,Arial,sans-serif" font-size="14">Minutos</text>
+  <line x1="145" y1="120" x2="145" y2="320" stroke="#806b82" stroke-width="2"/>
+  <line x1="145" y1="320" x2="810" y2="320" stroke="#806b82" stroke-width="2"/>
+  <rect x="260" y="130" width="170" height="190" rx="12" fill="url(#manual)" stroke="#c65391" stroke-width="1.5"/>
+  <rect x="575" y="272.5" width="170" height="47.5" rx="10" fill="url(#automated)" stroke="#ff9bd0" stroke-width="1.5" filter="url(#glow)"/>
+  <g font-family="Inter,Arial,sans-serif" font-weight="800" text-anchor="middle">
+    <text x="345" y="116" fill="#d778ac" font-size="23">40 min</text>
+    <text x="660" y="258" fill="#ff83c3" font-size="23">10 min</text>
+  </g>
+  <g fill="#fbf4fa" font-family="Inter,Arial,sans-serif" font-size="17" font-weight="600" text-anchor="middle">
+    <text x="345" y="354">Processo manual</text>
+    <text x="660" y="354">Com automação</text>
+  </g>
+  <rect x="245" y="382" width="515" height="1" fill="#49384d"/>
+  <text x="500" y="408" text-anchor="middle" fill="#ff83c3" font-family="Inter,Arial,sans-serif" font-size="16" font-weight="700">30 minutos economizados por execução</text>
+</svg>
