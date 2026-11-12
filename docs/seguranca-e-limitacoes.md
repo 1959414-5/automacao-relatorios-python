@@ -1,29 +1,35 @@
-# Segurança, privacidade e limitações
+# Escopo de publicação, privacidade e limitações
 
-## O que não é publicado
+## Natureza do repositório
 
-O projeto original foi utilizado em um ambiente corporativo. Por isso, este repositório não disponibiliza:
+Este repositório contém uma demonstração técnica independente, inspirada no estudo de caso apresentado no portfólio. Não é uma cópia nem uma distribuição do software corporativo original.
 
-- código-fonte original da automação do ERP;
-- coordenadas de mouse ou posições de campos;
+O código publicado implementa a parte independente de calendário: leitura de feriados e cálculo de dias úteis. A navegação operacional no ERP permanece fora do repositório.
+
+## Conteúdo disponibilizado
+
+- Código demonstrativo para cálculo de dias úteis.
+- Arquivo CSV de exemplo com feriados fictícios.
+- Testes unitários para as regras de calendário.
+- Documentação da arquitetura e das limitações da automação por interface.
+
+## Informações mantidas fora da publicação
+
+O material público não contém:
+
+- código-fonte proprietário da automação do ERP;
+- credenciais, tokens, senhas ou endereços internos;
+- coordenadas de mouse ou posições reais de campos;
 - nomes de relatórios e parâmetros internos;
-- credenciais, endereços de e-mail ou caminhos locais;
-- dados reais da empresa ou capturas de telas proprietárias.
+- caminhos locais, dados operacionais ou informações confidenciais;
+- capturas proprietárias de telas corporativas.
 
-## Limitações de automação por interface
+## Limitações técnicas
 
-Automação desktop depende do estado visual da aplicação, da resolução da tela, das posições dos controles e da sequência de navegação. Alterações no ERP podem quebrar o fluxo automatizado.
+A automação desktop depende do estado visual da aplicação, da resolução da tela, das posições dos controles e da sequência de navegação. Mudanças na interface podem exigir manutenção do fluxo.
 
-Sempre que possível, prefira APIs, integrações oficiais, filas ou rotinas de importação/exportação documentadas pelo fornecedor do sistema.
+Sempre que disponível, uma API, integração oficial ou rotina documentada tende a ser mais robusta que interações baseadas em coordenadas.
 
-## Controles recomendados
+## Controles representados no estudo de caso
 
-- Confirmação humana de parâmetros antes da execução.
-- Mecanismo de interrupção acessível durante todo o processo.
-- Logs sem dados pessoais ou informações sensíveis.
-- Validação dos arquivos gerados antes de atualizar sistemas externos.
-- Uso de ambiente de teste e dados fictícios para desenvolvimento.
-
-## Natureza deste repositório
-
-O conteúdo é uma demonstração técnica independente, inspirada no estudo de caso descrito no portfólio da autora. Não é uma cópia nem uma distribuição do software corporativo original.
+A arquitetura descrita prevê conferência humana dos parâmetros, possibilidade de cancelamento e validação dos arquivos gerados. Esses elementos fazem parte do desenho funcional apresentado no estudo de caso; não significam que a implementação completa do ERP esteja publicada aqui.
